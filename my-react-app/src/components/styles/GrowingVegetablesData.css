@@ -1,0 +1,35 @@
+.sectionInfo {
+    margin: 20px 80px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.sectionInfo h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sectionInfo p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.sectionInfo ul {
+    padding-left: 20px;
+}
+
+.sectionInfo ul li {
+    line-height: 1.6;
+}
+
+.sectionInfo a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.sectionInfo a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

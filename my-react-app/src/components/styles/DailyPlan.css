@@ -1,0 +1,46 @@
+/* CODE FOR DAILY PLANNER COMPONENT WITHIN PLANNER PAGE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 25%; 
+    height: 10vh; 
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    width: 20%; 
+    height: 5vh; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr td:first-child {
+    width: 5%; 
+    height: 5vh; 
+}
+
+.daily-planner button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.daily-planner button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,40 @@
+/* CODE FOR MODIFYING THE MODAL */
+.modalRecipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    display: flex; 
+    justify-content: space-between;
+    
+}
+img{
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-leftSide{
+   margin-left: 20px;
+    
+}
+.modal-rightSide{
+    margin-top: 50px;
+    margin-left: 20px;
+
+}

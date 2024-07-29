@@ -1,0 +1,145 @@
+/* INSPIRATION FROM https://codepen.io/choogoor/pen/RwBKZey */
+/* THESE CARDS ARE USED ON THE HOME PAGE TO LINK USERS TO OTHER PAGES */
+.linkCards *, .linkCards *:before, .linkCards *:after {
+  box-sizing: inherit;
+}
+
+.linkCards img {
+  max-width: 100%;
+  height: auto;
+}
+
+.linkCards {
+    box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.2), 0px 6px 10px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+}
+.linkCards a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  
+  .linkCards a:hover {
+    color: rgb(129, 155, 87); 
+    text-decoration: none; 
+  }
+
+.linkCards h1, .linkCards h2, .linkCards h3, .linkCards h4, .linkCards h5 {
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.linkCards .card-hover {
+  width: 360px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 32px -10px rgba(0,0,0,0.08);
+  border-radius: 20px;
+}
+
+
+.linkCards .card-hover:hover .card-hoverContent {
+  background-color: #DEE8C2;
+  bottom: 100%;
+  transform: translateY(100%);
+  padding: 50px 60px;
+  transition: all 0.35s cubic-bezier(.1,.72,.4,.97);
+}
+
+.linkCards .card-hover:hover .card-hoverLink {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: all 0.3s 0.35s cubic-bezier(.1,.72,.4,.97);
+}
+
+.linkCards .card-hover:hover img {
+  transform: scale(1);
+  transition: 0.35s 0.1s transform cubic-bezier(.1,.72,.4,.97);
+}
+
+.linkCards .card-hoverContent {
+  width: 100%;
+  text-align: center;
+  background-color: #86B971;
+  padding: 0 60px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.35s 0.35s cubic-bezier(.1,.72,.4,.97);
+  will-change: bottom, background-color, transform, padding;
+  z-index: 1;
+}
+
+.linkCards .card-hoverContent::before, .linkCards .card-hoverContent::after {
+  content: '';
+  width: 100%;
+  height: 120px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.linkCards .card-hoverContent::before {
+  top: -80px;
+  clip-path: ellipse(60% 80px at bottom center);
+}
+
+.linkCards .card-hoverContent::after {
+  bottom: -80px;
+  clip-path: ellipse(60% 80px at top center);
+}
+
+.linkCards .card-hoverTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.linkCards .card-hoverTitle span {
+  color: #2d7f0b;
+}
+
+.linkCards .card-hoverText {
+  font-size: 0.9rem;
+}
+
+.linkCards .card-hoverLink {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: #2d7f0b;
+  opacity: 0;
+  padding: 10px;
+  transition: all 0.35s;
+}
+
+.linkCards .card-hoverLink:hover svg {
+  transform: translateX(4px);
+}
+
+.linkCards .card-hoverLink svg {
+  width: 18px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+
+.linkCards .card-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  transform: scale(1.2);
+  transition: 0.35s 0.35s transform cubic-bezier(.1,.72,.4,.97);
+}

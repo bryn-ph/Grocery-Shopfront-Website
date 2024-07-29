@@ -1,0 +1,205 @@
+.catalogueButton {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .catalogueButton:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.24);
+  }
+
+
+/* info cards */
+.homeInfoSection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+.homeInfoSectionCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+}
+.mealPlannerSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.mealPlannerSectionCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+}
+.homeSectionTitle{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #819b57;
+}
+
+
+/* BANNERS */
+.normalBannerImage{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    box-shadow: none;
+}
+.mainBannerImage{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    box-shadow: none;
+    border-radius: 0 0 15px 15px;
+}
+.mainBanner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+  }
+.mainBannerTitle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .mainBannerMessage {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .userBannerMessage{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+/* ADJUSTING BANNERS FOR SCREEN SIZE */
+@media (max-width: 1430px) {
+  .userBannerMessage {
+    font-size: 1.2rem;
+    left: 12%;
+  }
+  .mainBannerTitle {
+    font-size: 1.8rem;
+  }
+  .mainBannerMessage{
+      font-size: 1.3rem;
+  }
+
+}
+@media (max-width: 1230px) {
+    .userBannerMessage {
+      font-size: 1.2rem;
+      left: 12%;
+    }
+    .mainBannerTitle {
+      font-size: 1.8rem;
+    }
+    .mainBannerMessage{
+        font-size: 1.3rem;
+    }
+
+  }
+  @media (max-width: 1140px) {
+    .userBannerMessage {
+      font-size: 1.2rem;
+      left: 14%;
+    }
+    .mainBannerTitle {
+        font-size: 1.62rem;
+      }
+      .mainBannerMessage{
+        font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 1008px) {
+    .userBannerMessage {
+      font-size: 1.2rem;
+      left: 14%;
+    }
+    .mainBannerTitle {
+        font-size: 1.6rem;
+      }
+      .mainBannerMessage{
+        font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .userBannerMessage {
+      font-size: 1.2rem;
+      left: 20%;
+    }
+    .mainBannerTitle {
+        font-size: 1.4rem;
+      }
+      .mainBannerMessage{
+        font-size: 1.0rem;
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .userBannerMessage {
+      font-size: 1rem;
+      left: 22%;
+    }
+    .mainBannerTitle {
+        font-size: 1.3rem;
+      }
+      .mainBannerMessage{
+        font-size: 0.9rem;
+    }
+    
+  }
+  @media (max-width: 385px) {
+    .userBannerMessage {
+      font-size: 1rem;
+      left: 25%;
+    }
+    .mainBannerTitle {
+        font-size: 1.1rem;
+      }
+      .mainBannerMessage{
+        font-size: 0.8rem;
+    }
+    
+  }

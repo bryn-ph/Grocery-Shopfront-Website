@@ -1,0 +1,143 @@
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.catalogue-home {
+  display: flex;
+  grid-template-columns: repeat(auto, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 50px;
+}
+
+.catalogue-title {
+  margin: 30px;
+}
+
+.catalogue-item {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalogue-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.catalogue-item .item-description {
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.catalogue-item h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.catalogue-item p {
+  margin-top: 5px;
+  color: #888;
+}
+
+.counter-container {
+  margin: 5px;
+}
+
+.counter {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  background-color: rgb(216, 206, 177);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counter:hover {
+  background-color: rgb(163, 155, 134);
+}
+
+.countNum {
+  margin: 0 20px;
+  font-size: 1.5em;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  background-color: rgb(216, 206, 177);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(129, 155, 87);
+}
+
+.add-to-cart:active {
+  transform: translateY(4px);
+}
+
+.catalogue .finalPrice {
+  font-size: 1.5em;
+  color: rgb(75, 75, 75);
+}
+
+.cart-button {
+  right: 7rem;
+  top: 4rem;
+  z-index: 1000;
+  position: fixed;
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  background-color: rgb(216, 206, 177);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  color: rgb(96, 117, 61);
+  transition: all 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cart-counter {
+  background-color: rgb(129, 155, 87);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8em;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  animation: pulse 0.3s ease;
+}

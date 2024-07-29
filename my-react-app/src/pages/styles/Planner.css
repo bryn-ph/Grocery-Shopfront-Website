@@ -1,0 +1,342 @@
+/* Planner.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+/* CODE FOR MODIFYING THE LEFT HAND SIDE TABS */
+.sectionTabs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+}
+
+.sectionTabs button {
+    padding: 10px 20px;
+    
+    font-size: 20px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sectionTabs button[disabled] {
+    font-weight: bold;
+}
+
+.sectionTabs button:hover {
+    background-color: #45a049;
+}
+
+
+/* CODE FOR MODIFYING THE RIGHT HAND SIDE CONTENT */
+.mainContent {
+    margin-left: 250px; 
+    margin-right: 250px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+/* CODE FOR MODIFYING THE CHECK BOXES */
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.checkboxes label {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+}
+
+/* Calories stuff */
+.calorieRange {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 1em;
+}
+
+.calorieRange .minMaxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.calorieRange label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* color: rgb(129, 155, 87); */
+    color: #4CAF50;
+    margin-right: 10px;
+    align-items: center;
+}
+.calorieRange input {
+    width: 75px;
+    padding: 0px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+    
+
+}
+.calorieRange input::placeholder {
+    font-size: 0.75rem; 
+}
+.calorieRange span{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #4CAF50;
+   margin: 0 4px;
+
+}
+
+
+/* CODE FOR RecipeCards */
+.recipeCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipeCard {
+    width: 200px; 
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+.recipeCard:hover {
+    transform: scale(1.05); 
+}
+
+.recipeCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipeCard h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.recipeCard h2.longTitle {
+    font-size: 15px; /* Smaller font size for long titles */
+}
+
+/* Page buttons */
+.pageButton {
+    margin: 5px;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+.pageButton.active {
+    background-color: #4CAF50;
+}
+.pageButton:hover {
+    background-color: #45a049;
+}
+.pageButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* CODE FOR MODIFYING THE MODAL */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates as many columns as can fit into the container */
+    gap: 20px; 
+    padding: 20px; 
+    background-color: #f8f8f8; 
+}
+
+.grid-item {
+    border: 2px solid #333; 
+    padding: 20px; 
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* AUTO FILL STUFF */
+.autoFill{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.confirmDialogOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmDialogBoxAuto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.confirmDialogBoxAuto .confirmationButton{
+    background-color: rgb(129, 155, 87);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.confirmDialogBoxAuto .confirmationButton:hover{
+    background-color: rgb(133, 196, 32);
+    transition: all 0.1s;
+}
+.confirmDialogBoxAuto .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.confirmDialogBoxAuto .cancelButton{
+    background-color: rgb(155, 89, 87);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.confirmDialogBoxAuto .cancelButton:hover{
+    background-color: rgb(201, 39, 33);
+    transition: all 0.1s;
+}
+
+/* ERROR MESSAGE */
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: ease 0.5s;
+}
+
+/* LOADING MESSAGE */
+.loading {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2em;
+    color: #333;
+    animation: blink 1s linear infinite;
+}
+/* Makes loading message look more prevalent */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+

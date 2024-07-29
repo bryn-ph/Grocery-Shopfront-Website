@@ -1,0 +1,93 @@
+/* Properties of pages that use the editablefield component */
+.fieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.fieldDisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fieldLabel {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.fieldValue {
+    padding: 0px 10px;
+    
+    width: 40%;
+    min-width: 200px;
+    
+    height: 30px;
+}
+.fieldValue.editable {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+#editButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(129, 155, 87);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+#editButton:hover{
+    color: rgb(143, 187, 73);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(129, 155, 87);
+    transition: all 0.1s;
+    
+}
+#saveButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(129, 155, 87);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+#saveButton:hover{
+    color: rgb(146, 209, 45);
+    font-weight: bold;
+    transition: all 0.1s;
+}
+#cancelButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(129, 155, 87);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+#cancelButton:hover{
+    color: rgb(146, 209, 45);
+    font-weight: bold;
+    transition: all 0.1s;
+}
+
+.fieldSelect {
+    width: 40%; 
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    min-width: 200px;
+    font-size: 1.1rem;
+    height: 40px;
+}
+.fieldCheckbox{
+    display: flex;
+    flex-direction: row; /* Arrange the checkbox and the text horizontally */
+    align-items: center; /* Vertically center the checkbox and the text */
+    gap: 10px;
+
+}

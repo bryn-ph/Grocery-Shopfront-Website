@@ -1,0 +1,46 @@
+/* CODE FOR WEEKLY PLANNER COMPONENT WITHIN PLANNER PAGE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 25%; /* Set the width to 25% of the table width */
+    height: 10vh; /* Set the height to 10% of the viewport height */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    width: 20%; /* Set a different width for the headings */
+    height: 5vh; /* Set a different height for the headings */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr td:first-child {
+    width: 5%; /* Set a different width for the first column */
+    height: 5vh; /* Set a different height for the first column */
+}
+
+.weekly-planner button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.weekly-planner button:hover {
+    background-color: #45a049;
+}

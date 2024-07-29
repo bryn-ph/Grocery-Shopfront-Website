@@ -1,0 +1,21 @@
+.App {
+  background-color:#fefefe;
+  height: 100%;
+  width: 100%;
+}
+.notificationMessage{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(216, 206, 177);
+  padding: 10px;
+  z-index: 800;
+}
+h1 {
+  color: rgb(129, 155, 87);
+  font-size: 2.5em;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+}
