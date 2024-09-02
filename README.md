@@ -11,14 +11,13 @@
 - [Resources Used](#resources-used)
 - [Credits & Key Notes](#credits)
 
-## Access
-
-Accessible at [GitHub Link To Project](https://github.com/rmit-fsd-2024-s1/s3981189-s4007036-a1)
+## Visit the Test Website Here
+https://bryn-ph.github.io/Grocery-Shopfront-Website/
 
 ## Made By
 
-- Bryn - s3981189
-- Jesse - s4007036
+- Bryn Phillips
+- Jesse Cochran
 
 ## About
 
