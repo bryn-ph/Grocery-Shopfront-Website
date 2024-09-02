@@ -11,7 +11,7 @@
 - [Resources Used](#resources-used)
 - [Credits & Key Notes](#credits)
 
-## Visit the Test Website Here
+## Visit the Website Here (Limited Functionality Without Database)
 https://bryn-ph.github.io/Grocery-Shopfront-Website/
 
 ## Made By
