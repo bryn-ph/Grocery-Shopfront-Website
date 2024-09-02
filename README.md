@@ -19,7 +19,7 @@ https://bryn-ph.github.io/Grocery-Shopfront-Website/
 - Bryn Phillips
 - Jesse Cochran
 
-## About
+## About the _Mock_ Client
 
 SOIL is a long-term organic food grocer based in Melbourne, dedicated to providing premium, organic fresh food to the community. Apart from being food grocers, they offer face-to-face seminars on diet, nutrition, and small-scale organic farming. However, in the face of stiff competition from online food businesses, SOIL is revamping its website to enhance customer engagement and stay relevant in the digital age.
 
@@ -27,12 +27,6 @@ SOIL is a long-term organic food grocer based in Melbourne, dedicated to providi
 
 The SOIL website project aims to create a modern online platform for the business, focusing on delivering a superior user experience and offering features such as online shopping, forums for discussion, reviews, and search functionalities.
 This project was made using React + Vite, for faster load times and less vulnerabilities.
-
-## Features Implemented in Assessment 1
-
-**Note:**
-
-As apart of the requirements for assignment 1 all data pertaining to the user such as user details, meal plans, cart info & past orders are stored within localStorage. Because of this please do not enter any private information such as actual passwords you may use.
 
 ## Pages & Key Components
 
